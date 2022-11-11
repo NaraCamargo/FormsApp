@@ -5,7 +5,27 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'paglogin',
+    loadChildren: () => import('./paglogin/paglogin.module').then( m => m.PagloginPageModule)
+  },
+  {
+    path: 'pagregistro',
+    loadChildren: () => import('./pagregistro/pagregistro.module').then( m => m.PagregistroPageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
   }
+
 ];
 @NgModule({
   imports: [

@@ -7,6 +7,10 @@
   padding-top: 10px;
 
 
+  ion-card{
+    --background:#c5bbd8;
+  }
+
   .b1{
     display: flex;
     align-items: center;
@@ -19,6 +23,6 @@ ion-toolbar{
   --background: #200060;
 
   ion-title{
-    color: rgb(183, 144, 255);
+    color: 'roxo';
   }
 }
